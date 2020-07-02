@@ -1,0 +1,18 @@
+/* Menu List
+############################################################################ */
+
+.menu-list {
+  color: $light;
+  font-size: $m;
+  overflow: hidden;
+  padding-top: $xxs;
+  padding-bottom: $xxs;
+  &__link {
+    color: $menu-link-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &__link:hover {
+    color: $menu-link-color-hover;
+  }
+}

@@ -1,0 +1,38 @@
+/* Main & Aside Content 
+############################################################################ */
+
+.main-content,
+.aside-content {
+  background-color: $lightest;
+  padding: $l $l $xl $l;
+  &__section {
+    margin-bottom: $xxl;
+    &+& {
+      padding-top: $xl;
+      border-top: solid $border-width $decoration-color;
+    }
+  }
+}
+
+.aside-content {
+  background-color: $darken;
+  &__headline {
+    font-size: $m;
+  }
+}
+
+@media only screen and (min-width: $vp-medium) {
+  .content-wrap {
+    display: grid;
+    grid-template-columns: 1fr 20 * $m;
+  }
+}
+
+@media only screen and (min-width: $vp-large) {
+  .content-wrap {
+    width: $vp-large;
+    margin: 0 auto;
+    grid-template-columns: 60 * $m 20 * $m;
+    box-shadow: $shadow-l;
+  }
+}

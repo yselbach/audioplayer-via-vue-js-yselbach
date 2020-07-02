@@ -1,0 +1,32 @@
+/* Teaser
+############################################################################ */
+
+.teaser {
+  &__image {
+    display: block;
+    width: 100%;
+    margin-bottom: $xs;
+  }
+  &__headline {
+    font-size: $s;
+    margin-bottom: $xs;
+  }
+  &__text {
+    font-size: $s;
+    line-height: $lh-default;
+  }
+  &__cta {
+    font-size: $s;
+    font-weight: $fw-normal;
+    display: inline-block;
+    transition: background $tr-medium;
+    text-decoration: none;
+    color: #fff;
+    border: solid $border-width $border-color;
+    background-color: $interaction-color;
+    @include button;
+    &:hover {
+      background-color: $interaction-color-hover;
+    }
+  }
+}

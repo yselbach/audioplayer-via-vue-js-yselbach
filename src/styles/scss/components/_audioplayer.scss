@@ -1,0 +1,114 @@
+.audioplayer-wrap {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  max-height: 0;
+
+  transition: max-height $tr-medium;
+
+  background-color: $darker;
+  &--is-active {
+    max-height: 100px;
+  }
+}
+
+.audioplayer {
+  display: flex;
+  overflow: hidden;
+  padding: $s;
+
+  color: $lighter;
+
+  &__title,
+  &__artist,
+  &__time-played,
+  &__duration-number,
+  .icon {
+    font-weight: normal;
+    line-height: 100%;
+
+    margin: 0;
+
+    color: $lighter;
+  }
+
+  &__textinfos {
+    display: flex;
+    align-items: center;
+    margin-bottom: $xxs/2;
+
+    text-overflow: clip;
+    text-overflow: ellipsis;
+    text-overflow: '…';
+  }
+
+  &__title,
+  &__artist {
+    font-size: $s;
+
+    color: $light;
+  }
+
+  &__title {
+    color: $lightest;
+    &::after {
+      display: inline-block;
+      margin-right: $xxs/2;
+      margin-left: $xxs/2;
+
+      content: '-';
+    }
+  }
+
+  &__toolbar {
+    margin-right: $xxs;
+  }
+
+  &__button-play-pause,
+  &__button-stop,
+  &__button-next-song,
+  &__button-previous-song{
+    border: 0 !important;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &__time-played,
+  &__duration-number {
+    font-size: $xs;
+  }
+
+  &__duration {
+    display: flex;
+    align-items: center;
+  }
+
+  &__duration-indicator-wrap {
+    position: relative;
+    width: $vp-small/2;
+    height: $border-width * 2;
+    margin-right: $xxs;
+    margin-left: $xxs;
+    cursor: pointer;
+
+    background-color: $lighten;
+  }
+
+  &__duration-indicator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+
+    background-color: $lighten-strong;
+  }
+
+
+}

@@ -1,0 +1,38 @@
+/* Playlist
+############################################################################ */
+
+.playlist {
+  &__item {
+    font-size: $s;
+    line-height: $lh-tight;
+
+    position: relative;
+    display: flex;
+    padding: $xxs 0;
+
+    transition: background $tr-fast, padding $tr-medium, color $tr-fast;
+    & + & {
+      border-top: solid $border-width $darken-light;
+    }
+    &:hover {
+      padding-left: $xs;
+
+      color: $lightest;
+      background-color: $interaction-color;
+      cursor: pointer;
+    }
+  }
+  &__miniplayer {
+    display: flex;
+    align-items: center;
+    margin-right: $xs;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  .icon.is-visible{
+    display: inline-block;
+  }
+}

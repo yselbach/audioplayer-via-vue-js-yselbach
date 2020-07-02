@@ -1,0 +1,20 @@
+/* Linklist
+############################################################################ */
+
+.linklist {
+  &__item {
+    font-family: 'Material Icons';
+    line-height: $lh-default;
+    margin-left: $m;
+    &:before {
+      font-size: $xs;
+      display: inline-block;
+      margin-left: -$m;
+      padding-right: $xxs;
+      content: 'link';
+    }
+    &>a {
+      font-family: $font-family-sans;
+    }
+  }
+}

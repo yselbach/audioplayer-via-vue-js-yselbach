@@ -1,0 +1,62 @@
+
+/* Main Header
+############################################################################ */
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  padding: $l;
+  transition: min-height $tr-medium;
+  background-image: url(../images/hero-l.png);
+  background-position: center center;
+  background-size: cover;
+  &__menu-bar {
+    background-color: $darken-medium;
+    left: 0;
+    padding: $xs $l;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  &__menu-bar-nav {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity $tr-medium;
+  }
+  &__menu-bar-nav--is-open {
+    height: auto;
+    opacity: 1;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: $vp-large) {
+      width: $vp-large;
+      margin: 0 auto;
+      padding: $m;
+    }
+  }
+  &__title,
+  &__subtitle {
+    display: inline-block;
+    align-self: flex-start;
+    margin: 0;
+    padding: $xxs $xs;
+    box-shadow: $shadow-l;
+  }
+  &__title {
+    background-color: $lightest;
+  }
+  &__subtitle {
+    color: $lightest;
+    background-color: $decoration-color;
+    ;
+  }
+  @media only screen and (min-width: $vp-large) {
+    min-height: 80vh;
+  }
+}

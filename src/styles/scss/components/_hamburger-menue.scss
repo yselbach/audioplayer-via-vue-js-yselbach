@@ -1,0 +1,31 @@
+/* Hamburger Menu
+############################################################################ */
+
+.hamburger-button {
+  margin-left: -4px;
+}
+
+.hamburger-button {
+  &:active {
+    border: none;
+  }
+  cursor:pointer;
+  background:0 0;
+  border:0;
+  transition:transform .2s ease-in-out;
+  width: 30px;
+  &__bar-top,
+  &__bar-bottom {
+    transition: transform .6s, opacity .6s;
+    transform-origin: 50% 50%
+  }
+  &--is-open &__bar-top {
+    transform: rotate(45deg)translateY(30%)
+  }
+  &--is-open &__bar-middle {
+    opacity: 0
+  }
+  &--is-open &__bar-bottom {
+    transform: rotate(-45deg)translateY(-30%)
+  }
+}

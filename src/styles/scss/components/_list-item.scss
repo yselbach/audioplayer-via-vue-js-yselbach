@@ -1,0 +1,15 @@
+/* Liste Item
+############################################################################ */
+
+.list-item {
+  &+& {
+    margin-top: $xxs;
+  }
+  &__number {
+    color: $decoration-color;
+    &:before {
+      content: '#';
+      color: $dark;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/* Page Footer
+############################################################################ */
+
+.page-footer {
+  padding: $m $m $xxl $m;
+  color: $footer-color;
+  background-color: $footer-background-color;
+  $self: &;
+  &__text {
+    font-size: $s;
+    line-height: $lh-default;
+    & a {
+      font-weight: $fw-normal;
+      text-decoration: none;
+      color: $footer-color;
+    }
+    &+.linklist {
+      margin-top: -$m;
+    }
+  }
+  &__headline {
+    font-size: $s;
+    font-weight: $fw-bold;
+    color: $footer-color;
+  }
+  @media only screen and (min-width: $vp-large) {
+    width: $vp-large;
+    margin: 0 auto;
+    box-shadow: $shadow-l;
+  }
+}

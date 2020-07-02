@@ -1,0 +1,39 @@
+/* Table
+############################################################################ */
+
+.table {
+  &__cell,
+  &__head {
+    width: 40%;
+    padding: $xxs;
+    text-align: left;
+  }
+  &__head {
+    font-weight: $fw-normal;
+  }
+  &__cell {
+    padding: $xxs;
+    border-top: solid $border-width $border-color;
+  }
+  tr:nth-child(even)>td {
+    background-color: $lighter;
+  }
+  &__cell--less-important,
+  &__head--less-important {
+    display: none;
+  }
+  @media only screen and (min-width: 40 * $m) {
+    .table__cell--less-important,
+    .table__head--less-important {
+      display: table-cell;
+      width: 30%;
+    }
+  }
+  &__cell--is-number,
+  &__head--is-number {
+    width: 10%;
+    text-align: right;
+  }
+}
+
+

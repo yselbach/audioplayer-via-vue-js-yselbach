@@ -1,0 +1,62 @@
+[
+  { 
+    "src": "./audio/hansatom_-_fine_print.mp3",
+    "tags": ["Indie"],
+    "duration": {
+      "min": "3",
+      "sec": "20"
+    },
+    "artist": "Hans Atom feat. MissJudged",
+    "title": "All of you"
+  },
+  { 
+    "src": "./audio/hansatom_-_persephone.mp3",
+    "tags": ["Pop"],
+    "duration": {
+      "min": "4",
+      "sec": "8"
+    },
+    "artist": "Hans Atom",
+    "title": "Persiphone"
+  },
+  { 
+    "src": "./audio/hansatom_-_how-are.mp3",
+    "tags": ["Pop"],
+    "duration": {
+      "min": "5",
+      "sec": "29"
+    },
+    "artist": "Hans Atom feat. the Fireproof Babies and MissJudged",
+    "title": "Who we are"
+  },
+  { 
+    "src": "./audio/hansatom_-_4real.mp3",
+    "tags": ["Alternative Rock"],
+    "duration": {
+      "min": "4",
+      "sec": "47"
+    },
+    "artist": "Hans Atom feat. Urmymuse and Stellar Artwars",
+    "title": "4 Real"
+  },
+  { 
+    "src": "./audio/hansatom_-_fine_print.mp3",
+    "tags": ["Rock"],
+    "duration": {
+      "min": "4",
+      "sec": "58"
+    },
+    "artist": "Hans Atom feat. Lonnie Ray Atkinson and Kirkoid",
+    "title": "Fine Print"
+  },
+  { 
+    "src": "./audio/hansatom_-_paint-the-sky.mp3",
+    "tags": ["Wave"],
+    "duration": {
+      "min": "3",
+      "sec": "18"
+    },
+    "artist": "Hans Atom feat. MissJudged",
+    "title": "Paint the Sky"
+  }
+]

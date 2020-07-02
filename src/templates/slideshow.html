@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slideshow Templates</title>
+  <script id="slideshow-container-template" type="text/template">
+    <figure class="teaser">
+      <div class="slide-show" data-js-id="{{id}}">
+        <div>
+          {{slides}}
+        </div>
+        <span class="slide-show__nav-previous" data-js-nav-previous-slide></span>
+        <span class="slide-show__nav-next" data-js-nav-next-slide></span>
+      </div>
+
+      <figcaption>
+        <h2 class="teaser__headline">{{title}}</h2>
+        <p class="teaser__text">{{info}}</p>
+        <a href="{{url}}" class="teaser__cta">{{linktext}}</a>
+      </figcaption>
+    </figure>
+  </script>
+
+  <script id="slideshow-slide-template" type="text/template">
+    <img src="{{imgSrc}}" class="teaser__image slide-show__slide" alt="{{altText}}" data-js-slide>
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
